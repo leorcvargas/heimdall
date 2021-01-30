@@ -1,5 +1,16 @@
-# Heimdall
+![Heimdall Logo](docs/logo.png)
 
+<div style="text-align: center">An open-source uptime monitoring service built with Elixir and Phoenix</div>
+
+<br />
+<br />
+
+---
+
+<br />
+<br />
+
+## Instructions
 To start your Phoenix server:
 
   * Install dependencies with `mix deps.get`

@@ -1,6 +1,5 @@
 ![Heimdall Logo](docs/logo.png)
-
-<p align="center">An open-source uptime monitoring service built with Elixir and Phoenix</p>
+**An open-source uptime monitoring service built with Elixir and Phoenix**
 
 <br />
 <br />

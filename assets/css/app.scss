@@ -1,2 +1,51 @@
 /* This file is for your main application css. */
 @import "../node_modules/nprogress/nprogress.css";
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.heimdall-logo {
+  font-weight: 800;
+  font-size: 1.5rem;
+  background: linear-gradient(297deg, rgba(28,60,207,1) 0%, rgba(173,0,255,1) 85%);
+  background: -webkit-linear-gradient(297deg, rgba(28,60,207,1) 0%, rgba(173,0,255,1) 85%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Alerts and form errors */	
+.alert {	
+  padding: 15px;	
+  margin-bottom: 20px;	
+  border: 1px solid transparent;	
+  border-radius: 4px;	
+}	
+.alert-info {	
+  color: #31708f;	
+  background-color: #d9edf7;	
+  border-color: #bce8f1;	
+}	
+.alert-warning {	
+  color: #8a6d3b;	
+  background-color: #fcf8e3;	
+  border-color: #faebcc;	
+}	
+.alert-danger {	
+  color: #a94442;	
+  background-color: #f2dede;	
+  border-color: #ebccd1;	
+}	
+.alert p {	
+  margin-bottom: 0;	
+}	
+.alert:empty {	
+  display: none;	
+}	
+.invalid-feedback {	
+  color: #a94442;	
+  display: block;	
+  margin: -1rem 0 2rem;	
+}

@@ -1,10 +1,15 @@
-<ul>
 <%= if @current_user do %>
-  <li><%= @current_user.email %></li>
-  <li><%= link "Settings", to: Routes.user_settings_path(@conn, :edit) %></li>
-  <li><%= link "Log out", to: Routes.user_session_path(@conn, :delete), method: :delete %></li>
-<% else %>
-  <li><%= link "Register", to: Routes.user_registration_path(@conn, :new) %></li>
-  <li><%= link "Log in", to: Routes.user_session_path(@conn, :new) %></li>
-<% end %>
-</ul>
+<%= link @current_user.email, class: "navbar-item", to: Routes.user_settings_path(@conn, :edit) %>
+<div class="navbar-item">
+  <div class="buttons">
+      <%= link class: "button is-ghost is-inverted", to: Routes.user_settings_path(@conn, :edit) do %>
+        <i class="fas fa-cog"></i>
+      <% end %>
+
+      <%= link "Log out", class: "button is-ghost", to: Routes.user_session_path(@conn, :delete), method: :delete %>
+    <% else %>
+      <%= link "Register", class: "button is-light", to: Routes.user_registration_path(@conn, :new) %>
+      <%= link "Log in", class: "button is-light", to: Routes.user_session_path(@conn, :new) %>
+    <% end %>
+  </div>
+</div>

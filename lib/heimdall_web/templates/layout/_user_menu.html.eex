@@ -3,7 +3,7 @@
 <div class="navbar-item">
   <div class="buttons">
       <%= link class: "button is-ghost is-inverted", to: Routes.user_settings_path(@conn, :edit) do %>
-        <i class="fas fa-cog"></i>
+        <i alt="User settings" class="fas fa-cog"></i>
       <% end %>
 
       <%= link "Log out", class: "button is-ghost", to: Routes.user_session_path(@conn, :delete), method: :delete %>

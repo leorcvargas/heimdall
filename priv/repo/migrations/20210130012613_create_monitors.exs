@@ -3,9 +3,9 @@ defmodule Heimdall.Repo.Migrations.CreateMonitors do
 
   def change do
     create table(:monitors) do
-      add :url, :string, size: 40
+      add :url, :string, size: 160
       add :name, :string, size: 40, null: true
-      add :reference_id, :string, size: 64, null: true
+      add :reference_id, :string, size: 128, null: true
       add :user_id, references(:users, on_delete: :delete_all), null: false
 
       timestamps()

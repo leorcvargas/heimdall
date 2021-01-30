@@ -1,6 +1,7 @@
 defmodule Heimdall.Accounts.User do
   use Ecto.Schema
   import Ecto.Changeset
+  alias Heimdall.Monitors.Monitor
 
   @derive {Inspect, except: [:password]}
   schema "users" do
@@ -8,6 +9,7 @@ defmodule Heimdall.Accounts.User do
     field :password, :string, virtual: true
     field :hashed_password, :string
     field :confirmed_at, :naive_datetime
+    has_many :monitors, Monitor
 
     timestamps()
   end
